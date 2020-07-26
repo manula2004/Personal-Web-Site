@@ -9,41 +9,46 @@
     <meta name="author" content="Peter Keres">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	
-	
 	<!-- bootstrap 4 link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- font awsome link v4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+	<!-- overriding bootstrap css -->
+	<link rel="stylesheet" href="override.css">
 	
 	<title>pKeresDev Home Page</title>
+
 </head>
 
 
 
-<body>
+<body >
 
 	<!-- The main nav bar at the top of the page -->
 	<section id="mainNav">		
-		<ul class="navbar navbar-dark bg-dark navbar-expand-md justify-content-end">
+		<ul class="navbar navbar-dark bg-dark navbar-expand-md justify-content-end align-items-center list-unstyled mb-2">
 			<!-- the navbar toggle button -->
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#topNav" aria-label="Toggle Navagtion">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <!-- the links in the nav bar-->
 			<div class="collapse navbar-collapse justify-content-around text-center" id="topNav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-					<!-- TODO: look into collapsed content for links when go to mobil size -->
-					<div class="dropdown-menu">
-						<a href="" class="dropdown-item d-none d-lg-block">testing1</a>
-						<a href="" class="dropdown-item">testing 32</a>
-						<a href="" class="dropdown-item">testing 234</a>
-					</div>
+				<li class="nav-item">
+					<a class="nav-link btn btn-primary m-2 m-md-0" href="../pages/index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Projects</a>
+					<a class="nav-link btn btn-primary m-2 m-md-0 disabled text-white" aria-disabled="true" href="#">
+						<span class="small d-md-none font-italic">Coming Soon! <br> </span> 
+						<del>Projects</del> 
+						<span class="small d-none d-md-inline font-italic">Coming Soon!</span> 
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Blog</a>
+					<a class="nav-link btn btn-primary m-2 m-md-0 disabled text-white" aria-disabled="true" href="#">
+						<span class="small d-md-none font-italic">Coming Soon! <br> </span> 
+						<del>Blog</del> 
+						<span class="small d-none d-md-inline font-italic">Coming Soon!</span> 
+					</a>
 				</li>
 			</div>
 		</ul>
@@ -54,11 +59,17 @@
 
 		<!-- the intro section -->
 		<section id="intro">
-			<div class="jumbotron">
-				<h1 class="display-2">HEY EVERYONE!!!</h1>
-				<p class="lead">Here is some filler text about me i guess?</p>
+			<div class="jumbotron pt-3 pb-2">
+				<!-- <img class="img-fluid" src="../images/pkeres.JPG" alt="Card image"> -->
+				<div class="mt-0" style="background: url('../images/pkeres.JPG')  no-repeat; background-size: contain; height: 450px; background-position: center center;"></div>
+				<h1 class="display-4 text-uppercase mt-2">software developer</h1>
+				<p>Peter Keres</p>
+				<p class="lead">Welcome to my little corner of the internet</p>
 				<hr class="my-4">
-				<p>more stuff!!! cant have too muich stuff really!</p>
+				<p >I decied to flex a little bit of my developer muscles and create this simple website.
+					Here you can find my resume/skills, projects I have worked on, a blog area, and whatever else i find worth wild to post on 
+					the web.
+				</p>
 			</div>
 		</section>
 
@@ -66,31 +77,53 @@
 
 		<!-- experence setion -->
 		<section id="experence">
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">Experence Section</h2>
+			<h2 class="display-4 border  rounded  text-white py-3">Experence</h2>
 
 			<!-- TODO: place holder for jobs -->
 			<div id="experenceBody" class="container">
 				<div class="row justify-content-center">
 
-					<!-- card 1 -->
-					<div class=" col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-					  			This is some text within a card body.
-							</div>
-				  		</div>
+					<!-- card CSU -->
+					<div class="card col-10 col-lg-5 my-4 mx-2">
+						<h5 class="card-title mt-4">Computer Sicence Tutor</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Columbus State Univeristy</h6>
+						<h6 class="card-subtitle mb-2 text-muted">Jun 2019 - Present</h6>
+						<h6 class="card-subtitle mb-2 text-muted">Columbus GA, United States</h6>
+						<hr>
+						<img class="card-img" src="../images/CSU.png" alt="Card image">
+						<div class="card-body">
+						  <div class="card-img-overlay">
+						  </div>
+						<hr>
+						  <p class="card-text">
+							As a tutor, I would help students who had problems with any computer science related topic or homework assignment. This would include help with design, concepts, and 
+							theory considered relevant to computer science. Also, advice concerning syntax, data structures, and bugs in relation to their project. Often, we would hold group workshops to 
+							go over large projects students were working on. </p>
+						</div>
 					</div>
 
-					<!-- card 2 -->
-					<div class="col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-					  			This is some text within a card body.
-							</div>
-				  		</div>
+					<!-- card OmegaFI -->
+					<div class="card col-10 col-lg-5 my-4 mx-2">
+						<h5 class="card-title mt-4">Web Developer Intern</h5>
+						<h6 class="card-subtitle mb-2 text-muted">OmegaFi</h6>
+						<h6 class="card-subtitle mb-2 text-muted">Sep 2019 - Nov 2019</h6>
+						<h6 class="card-subtitle mb-2 text-muted">Columbus GA, United States</h6>
+						<hr>
+						<img class="card-img my-5" src="../images/omegafi.webp" alt="Card image" >
+						<div class="card-body">
+						  <div class="card-img-overlay">
+						  </div>
+						<hr>
+						  <p class="card-text">
+							A team member and I were put in charge of migrating the php v5 code base to php v7. During this process I had to take the old, 
+							mostly undocumented, php 5 code base and make a document sheet for the codebase. During my time as an intern I also got familiar 
+							with their stack of businesses applications. This included a ticking system Jira, a documentation program Confluence, and their version control system GitLab.
+						</p>
+						</div>
 					</div>
 
 				</div>
+
 			<!-- end of jobs container -->
 			</div>
 		<!-- end of experence section  -->
@@ -100,194 +133,275 @@
 		<!-- skills section -->
 		<section id="skills">
 			<!-- skills header -->
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">Experence Section</h2>
+			<h2 class="display-4 border rounded  py-3 text-white">Experence Section</h2>
 
 			<!-- skills body -->
 			<div class="container">
 
 				<!-- languages sub section header -->
-				<h3 class="border border-primary rounded bg-primary py-3 w-75 mx-auto">Languages</h2>
-					<!-- row 1 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+				<h3 class="border rounded py-3 w-75 mx-auto text-white my-4">Languages</h3>
+					<!-- row 1 of languages -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- python -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.python.org/" target="_python" rel="noopener noreferrer" >
+							<img src="../images/python.png" alt="..." class="img-fluid" style="height: 100px;">	
+							</a>
+						</div>
+						<!-- java -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.java.com/en/" target="_java" rel="noopener noreferrer" >
+							<img src="../images/java.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- C -->
+						<div class="col-5 col-md-3 my-5 my-md-0">
+							<a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_c" rel="noopener noreferrer" >
+							<img src="../images/c.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
 						</div>
 
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
-						</div>
-					<!-- end of row 1 -->
+					
+						<!-- end of row 1 -->
 					</div>
 
-					<!-- row 2 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+					<!-- row 2 of languages -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- css -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.w3.org/Style/CSS/" target="_css" rel="noopener noreferrer" >
+							<img src="../images/css.png" alt="..." cclass=" img-fluid " style="height: 100px;">
+							</a>
+						</div>
+						<!-- java script -->
+						<div class="col-5 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/JavaScript" target="_javascript" rel="noopener noreferrer" >
+							<img src="../images/js.png" alt="..." cclass=" img-fluid " style="height: 100px;">
+							</a>
+						</div>
+						<!-- html-->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/HTML" target="_html" rel="noopener noreferrer" >
+							<img src="../images/html.png" alt="..." cclass=" img-fluid " style="height: 100px;">
+							</a>
 						</div>
 
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
 
-						</div>
+
 					<!-- end of row 2 -->
+					</div>
+
+					<!-- row 3 of languages -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- sql -->
+						<div class="col-5 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/SQL" target="_sql" rel="noopener noreferrer" >
+							<img src="../images/sql.jpg" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- c# -->
+						<div class="col-5 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_c#" rel="noopener noreferrer" >
+							<img src="../images/c2.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- php -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://www.php.net/" target="_php" rel="noopener noreferrer" >
+							<img src="../images/php.png" alt="..." class=" img-fluid " style="height: 100px;">
+							</a>
+						</div>
+					</div>
+
+					<!-- row 4 of languages -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- visual basic -->
+						<div class="col-5 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_vb" rel="noopener noreferrer" >
+							<img src="../images/vb.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- cobol -->
+						<div class="col-5 col-md-3">
+							<a href="https://en.wikipedia.org/wiki/COBOL" target="_cobol" rel="noopener noreferrer" >
+							<img src="../images/cbl.jpg" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- kotlin -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://kotlinlang.org/" target="_kotlin" rel="noopener noreferrer" >
+							<img src="../images/kotlin.jpg" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
 					</div>
 
 				<!-- frame works sub section header -->
-				<h3 class="border border-primary rounded bg-primary py-3 w-75 mx-auto">Frame Works</h2>
-					<!-- row 1 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+				<h3 class="border  rounded py-3 w-75 mx-auto text-white">Frame Works</h3>
+					
+					<!-- row 1 of frame works -->
+					<div class="continer row justify-content-center align-items-center">
+						<!-- django -->
+						<div class="col-8 py-4">
+							<a href="https://www.djangoproject.com/" target="_django" rel="noopener noreferrer" >
+							<img src="../images/django.png" alt="..." class=" img-fluid " >	
+							</a>
 						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+						<!-- open cv -->
+						<div class="col-8 py-4">
+							<a href="https://opencv.org/" target="_opencv" rel="noopener noreferrer" >
+							<img src="../images/opencv.png" alt="..." class=" img-fluid " style="height: 200px;">	
+							</a>
 						</div>
-					<!-- end of row 1 -->
+						<!-- bootstrap -->
+						<div class="col-8 py-4">
+							<a href="https://getbootstrap.com/" target="_bootstrap" rel="noopener noreferrer" >
+							<img src="../images/bootstrap.png" alt="..." class=" img-fluid " style="height: 200px;" >	
+							</a>
+						</div>
 					</div>
 
-					<!-- row 2 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
 
-						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
-						</div>
-					<!-- end of row 2 -->
-					</div>
 				
 				<!-- tools sub section header -->
-				<h3 class="border border-primary rounded bg-primary py-3 w-75 mx-auto">Tools</h2>
-					<!-- row 1 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
+				<h3 class="border rounded py-3 w-75 mx-auto mb-4 text-white">Tools</h3>
 
+					<!-- row 1 of tools -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- git -->
+						<div class="col-6 col-md-3">
+							<a href="https://git-scm.com/" target="_git" rel="noopener noreferrer" >
+							<img src="../images/git.png" alt="..." class=" img-fluid " style="height: 100px;">
+							</a>
 						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+						<!-- rasbery pi -->
+						<div class="col-4 col-md-3">
+							<a href="https://www.raspberrypi.org/" target="_rasberrypi" rel="noopener noreferrer" >
+							<img src="../images/pi.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
 						</div>
-					<!-- end of row 1 -->
+						<!-- mac os -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://www.apple.com/macos/" target="_macos" rel="noopener noreferrer" >
+							<img src="../images/mac.png" alt="..." class=" img-fluid " style="height: 100px;">
+							</a>	
+						</div>
 					</div>
 
-					<!-- row 2 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+					<!-- row 2 of tools -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- homebrew -->
+						<div class="col-5 col-md-3">
+							<a href="https://brew.sh/" target="_homebrew" rel="noopener noreferrer" >
+							<img src="../images/homebrew.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
 						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+						<!-- confluence -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.atlassian.com/software/confluence" target="_confluence" rel="noopener noreferrer" >
+							<img src="../images/confluence.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
 						</div>
-					<!-- end of row 2 -->
+						<!-- jira -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://www.atlassian.com/software/jira" target="_jira" rel="noopener noreferrer" >
+							<img src="../images/jira.svg" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
 					</div>
 				
+
+					<!-- row 3 of tools -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- slack -->
+						<div class="col-5 col-md-3">
+							<a href="https://slack.com/" target="_slack" rel="noopener noreferrer" > 
+							<img src="../images/slack.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- wsl -->
+						<div class="col-5 col-md-3">
+							<a href="https://ubuntu.com/wsl" target="_wsl" rel="noopener noreferrer" >
+							<img src="../images/wsl.webp" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>	
+						</div>
+						<!-- trello -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://trello.com/en-US" target="_trello" rel="noopener noreferrer" >
+							<img src="../images/trello.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+					</div>
+			
+
 				<!-- software sub section header -->
-				<h3 class="border border-primary rounded bg-primary py-3 w-75 mx-auto">Software</h2>
-					<!-- row 1 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+				<h3 class="border rounded py-3 w-75 mx-auto text-white">Software</h3>
+					
+					<!-- row 1 of software -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- intelij -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.jetbrains.com/idea/" target="_jetbrains" rel="noopener noreferrer" >
+							<img src="../images/intelij.png" alt="..." class=" img-fluid " >
+							</a>
 						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+						<!-- git karaken -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.gitkraken.com/" target="_gitkraken" rel="noopener noreferrer" >
+							<img src="../images/gitkraken.svg" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>	
 						</div>
-					<!-- end of row 1 -->
+						<!-- vs code -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://code.visualstudio.com/" target="_vscode" rel="noopener noreferrer" >
+							<img src="../images/vscode.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
 					</div>
 
-					<!-- row 2 of sub section -->
-					<div class="continer row justify-content-center">
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+					<!-- row 2 of software -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- unity -->
+						<div class="col-5 col-md-3">
+							<a href="https://unity.com/" target="_unity" rel="noopener noreferrer" >
+							<img src="../images/unity.png" alt="..." class=" img-fluid " style="height: 100px;">
+							</a>
 						</div>
-
-						<div class="col-4 col-md-8">
-							<div class="card">
-								<div class="card-body">
-									Testing out how the cards look
-								</div>
-							</div>	
-
+						<!-- photo shop -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.adobe.com/products/photoshop.html" target="_photoshop" rel="noopener noreferrer" >
+							<img src="../images/ps.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
 						</div>
-					<!-- end of row 2 -->
+						<!-- final cut -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://www.apple.com/final-cut-pro/" target="_apple" rel="noopener noreferrer" >
+							<img src="../images/finalcut.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
 					</div>
+
+					<!-- row 3 of tools -->
+					<div class="continer row justify-content-center align-items-center my-2 my-md-5">
+						<!-- MS office -->
+						<div class="col-5 col-md-3">
+							<a href="https://www.office.com/" target="_office" rel="noopener noreferrer" >
+							<img src="../images/office.png" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+						<!-- android stuido -->
+						<div class="col-5 col-md-3">
+							<a href="https://developer.android.com/studio" target="_android" rel="noopener noreferrer" >
+							<img src="../images/androidstudio.png" alt="..." class=" img-fluid " style="height: 100px;">
+							</a>	
+						</div>
+						<!-- creately -->
+						<div class="col-5 my-5 my-md-0 col-md-3">
+							<a href="https://creately.com/" target="_creately" rel="noopener noreferrer" >
+							<img src="../images/creately.webp" alt="..." class=" img-fluid " style="height: 100px;">	
+							</a>
+						</div>
+					</div>
+
 			<!-- end of skills body -->
 			</div>
 		<!-- end of skills section -->
@@ -296,29 +410,138 @@
 		<!-- awards section -->
 		<section id="awards">
 			<!-- awards header -->
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">Awards</h2>
+			<h2 class=" border  rounded py-3 text-white">Awards/Recognition</h2>
 
 			<!-- awards body -->
 			<div id="awardsBody" class="container">
 				<div class="row justify-content-center">
 
-					<!-- card 1 -->
-					<div class=" col-5 col-md-10">
-						<div class="card">
+					<!-- Mesonet -->
+					<div class=" col-10 col-md-5 my-4">
+						<div class="card h-100">
+							<h3 class="card-header">Educational Microclimate Mesonet System Design Publication</h3>
 							<div class="card-body">
-									This is some text within a card body.
+									<h5 class="card-title">Mar 31, 2020 | Springer Link </h5>
+									<p class="card-text">The goal of the project was to create a Mesonet system for Columbus State university weather department. This system would allow the weather depart to view data from there various weather stations, spikes in weather patterns, and even weather prediction. The work on this system was document and published by the springer publishing company. </p>
+									<p class="card-text">This project was to be presented at the AINA International Conference 2020 in Caserta, Italy, but due to the COVID-19 epidemic this event was canceled.  </p>
+							</div>
+							<div class="card-footer">
+								<a href="https://link.springer.com/chapter/10.1007/978-3-030-44038-1_3" class="btn btn-primary" target="_springer" rel="noopener noreferrer" >Publication</a>
 							</div>
 						</div>
 					</div>
 
-					<!-- card 2 -->
-					<div class="col-5 col-md-10">
-						<div class="card">
+					<!-- ACM-->
+					<div class="col-10 col-md-5 mb-4 mt-md-4">
+						<div class="card h-100">
+							<h3 class="card-header"> Vice President Association of Computing Machinery </h3>
 							<div class="card-body">
-									This is some text within a card body.
+									<h5 class="card-title"> Mar 2020 | Columbus State Univeristy</h5>
+									<p class="card-text"> Kept the ACM chapter an active part of the student body though finical planning and activities. Holding weekly meeting where we 
+										would do small coding projects with a group of students. Also, by-weekly workshops showing off new technology/ techniques that are
+										 not shown in the classroom</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://www.acm.org/" target="_acm" rel="noopener noreferrer" class="btn btn-primary">ACM</a>
 							</div>
 						</div>
 					</div>
+
+
+					<!-- Dean list 2020 -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">Columbus State University Dean's List Spring 2020</h3>
+							<div class="card-body">
+									<h5 class="card-title"> May 2020 | Columbus State University</h5>
+									<p class="card-text"> The Dean's List represents an elite group of Columbus State University students who have excelled in the classroom by earning 
+										at least a 3.60 GPA (on a 4.00 scale) in at least 12 semester credit hours. </p>
+							</div>
+							<div class="card-footer">
+								<a href="https://columbusstate.meritpages.com/stories/Peter-Keres-is-Recognized-on-the-Spring-2020-Dean-s-List-at-Columbus-State-University-/30914960" target="_csu" rel="noopener noreferrer" class="btn btn-primary">Dean's List</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- ACM conference -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">ACM Mid-Southeast Conference Presenter</h3>
+							<div class="card-body">
+									<h5 class="card-title"> Nov 2019 | Gatlinburg TN</h5>
+									<p class="card-text"> Co-Developed a facial recognition system using OpenCV and a Raspberry Pi to secure access of 
+										facilities. The application would scan a person face, see if are in the system, and then allow access accordingly. 
+										This project was accepted and presented at the ACM Mid-Southeast conference in Gatlinburg TN. </p>
+							</div>
+							<div class="card-footer">
+								<a href="http://www.acmmidsoutheast.org/" target="_acm" rel="noopener noreferrer" class="btn btn-primary"> ACM Conference</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- omegafi -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">OmegaFi Academic Scholarship</h3>
+							<div class="card-body">
+									<h5 class="card-title">Jun 2019 | OmegaFi</h5>
+									<p class="card-text"> This is awarded to students who have high academic achievements and have presence in the computer science community. </p>
+							</div>
+							<div class="card-footer">
+								<a href="https://columbusstate.formstack.com/forms/csscholarships" target="_omegafi" rel="noopener noreferrer" class="btn btn-primary"> Scholarship</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 3D workshop -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">3D Printing Workshop Presentation</h3>
+							<div class="card-body">
+									<h5 class="card-title">Jun 2019 | Columbus State Univeristy</h5>
+									<p class="card-text">I directed a workshop with the faculty and staff of CSU on how to use the 3D printers on campus. This workshop went over how to create a simple 3d model, how to print that model, and maintenance. Finally, they got to print an item of their own that they could keep.</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://store.makerbot.com/" target="_makerbot" rel="noopener noreferrer" class="btn btn-primary"> Printers</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- QEP -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">QEP Tower Day Award</h3>
+							<div class="card-body">
+									<h5 class="card-title">Apr 2018 | Columbus State Univeristy</h5>
+									<p class="card-text">CSU's QEP, We Solve It!: Discover, Design, Deliver was developed based on feedback from students, faculty and staff. It's devoted to improving students' creative real-world problem solving skills at the CSU.
+										Earned this award by delivering a prototype program and a conceptual pitch on how to better protect schools against gun violence.</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://aa.columbusstate.edu/research/undergrad/towerday_index.php" target="_qep" rel="noopener noreferrer" class="btn btn-primary"> QEP</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- deans 2018 -->
+					<div class="col-10 col-md-5 mb-4">
+						<div class="card h-100">
+							<h3 class="card-header">Columbus State University Dean's List Spring 2018</h3>
+							<div class="card-body">
+									<h5 class="card-title"> May 2018 | Columbus State University</h5>
+									<p class="card-text"> The Dean's List represents an elite group of Columbus State University students who have excelled in the classroom by earning 
+										at least a 3.60 GPA (on a 4.00 scale) in at least 12 semester credit hours. </p>
+							</div>
+							<div class="card-footer">
+								<a href="https://news.columbusstate.edu/columbus-state-university-announces-spring-2018-deans-list" target="_csu" rel="noopener noreferrer" class="btn btn-primary"> Dean's List</a>
+							</div>
+						</div>
+					</div>
+
 
 				</div>
 			<!-- end of awards body container -->
@@ -331,62 +554,57 @@
 		<!-- eduction section -->
 		<section id="eduction">
 			<!-- eduction header -->
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">Eduction Section</h2>
+			<h2 class="display-4 border rounded py-3 text-white">Eduction Section</h2>
 
 			<!-- eduction body -->
 			<div id="eductionBody" class="container">
 				<div class="row justify-content-center">
 
-					<!-- card 1 -->
-					<div class=" col-5 col-md-10">
+					<!-- CSU eduction -->
+					<div class="col-10 my-4">
 						<div class="card">
+							<h3 class="card-header">Columbus State University</h3>
 							<div class="card-body">
-					  			This is some text within a card body.
+								<h5 class="card-title">Bachelor of Applied Sicence</h5>
+								<h6 class="card-subtitle mb-2 text-muted">2017 - 2020</h6>
+								<p class="card-text">Computer Sicence, Software Engineering Track, 3.7, Magna Cum Laude</p>
 							</div>
-				  		</div>
+							<div class="card-footer">
+								<a href="https://www.columbusstate.edu/" target="_csu" rel="noopener noreferrer" class="btn btn-primary"> CSU</a>
+							</div>
+						</div>
 					</div>
 
-					<!-- card 2 -->
-					<div class="col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-					  			This is some text within a card body.
-							</div>
-				  		</div>
-					</div>
-
+				<!-- end of row -->
 				</div>
+
 			<!-- end of eduction body container -->
 			</div>
 		<!-- end of eduction section -->
 		</section>
 
 
-		<!-- NA section -->
-		<section id="NA">
-			<!-- NA header -->
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">NA</h2>
+		<!-- resume section -->
+		<section id="resume">
+			<!-- resume header -->
+			<h2 class="display-4 border rounded py-3 text-white">Resume</h2>
 
-			<!-- NA body -->
-			<div id="NABody" class="container">
+			<!-- resume body -->
+			<div id="resumeBody" class="container">
 				<div class="row justify-content-center">
 
 					<!-- card 1 -->
-					<div class=" col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-									This is some text within a card body.
-							</div>
-							</div>
+					<div class="col-8 mt-2 col-md-4 my-md-4">
+						<a href="../resources/KeresResume.pdf" download="Keres Resume">
+							<img src="../images/resume.png" class="img-fluid" style="height: 150px;">
+						  </a> 
 					</div>
 
 					<!-- card 2 -->
-					<div class="col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-									This is some text within a card body.
-							</div>
-							</div>
+					<div class="col-8 my-4 pl-0 col-md-4 pl-md-3 my-md-4">
+						<a href="../resources/cvKeres.pdf" download="Keres CV">
+							<img src="../images/cv.svg" class="img-fluid" style="height: 150px;">
+						  </a> 
 					</div>
 
 				</div>
@@ -399,31 +617,51 @@
 		<!-- Contact section -->
 		<section id="contact">
 			<!-- contact header -->
-			<h2 class="display-4 border border-primary rounded bg-primary py-3">contact Section</h2>
+			<h2 class="display-4 border rounded py-3 text-white">External Channles and Contact</h2>
 
 			<!-- contact body -->
 			<div id="contactBody" class="container">
 				<div class="row justify-content-center">
 
-					<!-- card 1 -->
-					<div class=" col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-									This is some text within a card body.
-							</div>
-							</div>
+					<!-- TODO: think about using a badge or a pill to give icons a round shape -->
+
+					<!-- twitter -->
+					<div class="col-6 my-4">
+						<a href="https://twitter.com/PkeresDev" target="_twitter" rel="noopener noreferrer" class="text-secondary" >
+							<i class="fa fa-5x fa-twitter" aria-hidden="true"></i>
+						  </a> 
 					</div>
 
-					<!-- card 2 -->
-					<div class="col-5 col-md-10">
-						<div class="card">
-							<div class="card-body">
-									This is some text within a card body.
-							</div>
-							</div>
+					<!-- github-->
+					<div class="col-6 my-4">
+						<a href="https://github.com/peterkeres" target="_github" rel="noopener noreferrer"  class="text-secondary" >
+							<i class="fa fa-5x fa-github" aria-hidden="true"></i>
+						  </a> 
+					</div>
+
+					<!-- linkedin -->
+					<div class="col-6 mb-4">
+						<a href="https://www.linkedin.com/in/peter-keres-6362861b1/" target="_linkedin" rel="noopener noreferrer" class="text-secondary" >
+							<i class="fa fa-5x fa-linkedin" aria-hidden="true"></i>
+							</a> 
+					</div>
+
+					<!-- email-->
+					<div class="col-6 mb-4">
+						<a href="mailto: pkeresdev@gmail.com" class="text-secondary" >
+							<i class="fa fa-5x fa-envelope-o" aria-hidden="true"></i>
+						</a> 
+					</div>
+
+					<!-- youtube -->
+					<div class="col-6 mb-4">
+						<a href="https://www.youtube.com/c/pKeresDev/" target="_youtube" rel="noopener noreferrer" class="text-secondary" >
+							<i class="fa fa-5x fa-youtube" aria-hidden="true"></i>
+						</a> 
 					</div>
 
 				</div>
+
 			<!-- end of contact body container -->
 			</div>
 		<!-- end of contact section -->
@@ -435,14 +673,32 @@
 
 
 
-
-
+	<!-- the footer of the page -->
+	<footer class="container-fluid mt-5 pt-2 text-center">
+		<div class="row">
+			<!-- upload date -->
+			<div class="col-4 ">
+				<p>Updated: July 26, 2020</p>
+			</div>
+			<!-- vote.org -->
+			<div class="col-4 ">
+				<a href="https://www.vote.org/"> 2020 got you down?</a>
+			</div>
+			<!-- website development status -->
+			<div class="col-4 ">
+				<p>Follow development of the website <a href="https://github.com/peterkeres/Personal-Web-Site " target="_github" rel="noopener noreferrer" >here</a></p>
+			</div>
+		<!-- end of the row -->
+		</div>
+	<!-- end of the footer -->
+	</footer>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
 <!-- end of the html body -->
 </body>
 </html>
