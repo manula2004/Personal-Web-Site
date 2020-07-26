@@ -1,0 +1,26 @@
+body{
+    background-color: #e6eef7;
+}
+
+.jumbotron{
+    background-color: white;
+}
+
+footer{
+    background-color: #343a40 ;
+    color: white;
+}
+h2,h3{
+    background-color: #343a40;
+
+}
+
+.btn-primary{
+    background-color: #254669;
+    border-color: #254669;
+}
+
+a.btn-primary{
+    background-color: #1a65c1;
+    border-color: #1a65c1;
+}
