@@ -1,5 +1,5 @@
 # My personal website!
-This project is just simply my own personal website. nothing too special really.
+This project is just simply my own personal website. Nothing too special really.
 
 ## Why do it?
 If we are being honest, I am really doing this for 2 major reasons
